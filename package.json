@@ -1,0 +1,33 @@
+{
+  "name": "nodewithtypescript",
+  "version": "1.0.0",
+  "description": "Node with Typescript and REST ap\u001b[D\u001b[D\u001b[Dful api",
+  "main": "./dist/server.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "test": "test",
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[A\u001b[B"
+  },
+  "author": "Rizwaan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.9.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.12.1"
+  }
+}
